@@ -1,10 +1,9 @@
 :root {
-    --color-topwhite      : #ffffff;
+    --topwhite      : #ffffff;
     --bottom   : #666666;
     --mint    : #4aaaa5;
-    --color-separator     : #d8d8d8;
-    --color-text          : #777777;
-    --color-text-highlight: #ff6600;
+    --whitespread     : #d8d8d8;
+    --textcolor         : #777777;
 }
 body {
     background-image : url("background.jpg.png");
@@ -36,13 +35,13 @@ h2 {
 
 }
 #top_bar {
-    background   : var(--color-topwhite);
+    background   : var(--topwhite);
     border-bottom: 5px solid var(--mint);
 }
 
 #name {
     background-color: var(--mint);
-    color           : var(--color-topwhite);
+    color           : var(--topwhite);
     font-family     : "Georgia", "Times", "Times New Roman", serif;
     font-size       : 1.9em;
     font-weight     : bold;
@@ -52,9 +51,9 @@ h2 {
     padding         : 30px 40px;
 }
 #navbar a{
-    color: var(--color-text);
+    color: var(--bottom);
     text-decoration: none;
-    border-right: 2px solid var(--color-separator);
+    border-right: 2px solid var(--whitespread);
     margin: 0 15px;
     padding-right: 25px;
 }
@@ -69,7 +68,8 @@ h2 {
 }
 
 .frame1 {
-    background-color: var(--color-topwhite);
+    margin-bottom: 30px;
+    background-color: var(--topwhite);
     box-shadow      : 0 4px  8px  6px rgba(0, 0, 0, 0.12),
                       0 6px 20px 10px rgba(0, 0, 0, 0.07);
     
@@ -79,7 +79,7 @@ h2 {
 .frame1 h1 {
     margin-left: 30px;
     margin-bottom : 30px;
-    border-bottom : 2px solid var(--color-separator);
+    border-bottom : 2px solid var(--whitespread);
     padding-bottom: 20px;
 }
 #bottom {
@@ -95,13 +95,13 @@ a:hover{
 }
 
 #copyright {
-    color         : var(--color-topwhite);
+    color         : var(--topwhite);
     text-align    : center;
 }
 
 #copyright a {
     text-align: center;
-    color: var(--color-top-pane);
+    color: var(--topwhite);
 }
 .photo{
     float: left;
@@ -149,7 +149,7 @@ P{
 
 .frame1 #form_submit {
     background-color: var(--mint);
-    color           : var(--color-topwhite);
+    color           : var(--topwhite);
     font-size       : 1.3em;
     font-weight     : bold;
     text-align      : center;
@@ -157,4 +157,32 @@ P{
     width: 30%;
     margin-top: 40px;
     
+}
+.photo1{ position: relative;
+    float: left;
+    width: 33%;
+
+}
+.photo2{position: relative;
+    float: right;
+    width: 33%;
+
+}
+.photo3{position: relative;
+    float: left;
+    width: 33%
+
+}
+.photo4
+{position: relative;
+    float: right;
+    width: 33%;
+
+}
+.template{
+    position: absolute;
+    background-color: mint;
+    width: 33%;
+    height: 50px;
+    text-align: center;
 }
